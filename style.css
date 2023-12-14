@@ -13,13 +13,13 @@ header{
     width: 100%;
     align-items: center;
     z-index: 1000;
-    height: auto;
+    height: 65px;
 }
 header.sticky{
   background: rgba(0, 0, 0, 0.5);
 }
 .logo{
-    width:75px;
+    width:65px;
 }
 .logo img{
     width: 100%;
@@ -234,28 +234,16 @@ header.sticky{
     opacity: 1;
   }
   .purple-box {
-    background-color: purple;
-    width: 90%;
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    margin: 0 auto;
-  }
-
-  .dropdown {
     width: 100%;
-    padding: 5px;
-    border-radius: 5px;
+    background-color: purple;
+    padding: 20px;
+    color: white;
   }
-  #image-container {
-    display: none;
-    margin-top: 10px;
+  #dropdown{
+    width: 500px;
+    color: #8C23E3;
+    font-size: 2rem;
     text-align: center;
-  }
-
-  #image-container img {
-    width: 60%;
-    height: auto;
   }
 
   @media screen and (max-width: 1400px) {
@@ -300,5 +288,11 @@ header.sticky{
       background: rgba(0, 0, 0, 0.6);
       border-radius: 30px;
       top:55%;
+      left:10%;
+      right:10%;
+      font-size: 90%;
+    }
+    .container a{
+      font-size: .8rem;
     }
   }

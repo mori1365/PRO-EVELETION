@@ -62,13 +62,16 @@
         </div>
     </div>
     <div class="purple-box">
-        <select id="dropdown" class="dropdown" onchange="showImage()">
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
+        <h2>انتخاب کنید:</h2>
+        <select id="dropdown">
+          <option value="item1">جدول لیگ</option>
+          <option value="item2">برترن ها</option>
+          <option value="item3">آمار بازیکنان</option>
+          <!-- می‌تونید آیتم‌های دیگه‌ای هم اضافه کنید -->
         </select>
-        <div id="image-container">
-          <img src="" alt="Selected Image">
+      
+        <div id="display-item" style="display:none;">
+          <iframe id="myFrame" width="100%" height="800px"></iframe>
         </div>
       </div>
       <script src="./app.js"></script>

@@ -15,21 +15,26 @@ window.onscroll = () => {
     nav.classList.remove('open')
 }
 
-function showImage() {
-    var dropdown = document.getElementById("dropdown");
-    var selectedIndex = dropdown.selectedIndex;
-    var selectedValue = dropdown.options[selectedIndex].value;
+function showSelectedIframe() {
+  var dropdown = document.getElementById("dropdown");
+  var selectedItem = dropdown.options[dropdown.selectedIndex].value;
+  var displayDiv = document.getElementById("display-item");
+  var myFrame = document.getElementById("myFrame");
 
-    var imageContainer = document.getElementById("image-container");
-    var imageElement = imageContainer.getElementsByTagName("img")[0];
-
-    if (selectedValue === "option1") {
-      imageElement.src = "./imge/IMG_20231214_122106_227.jpg";
-    } else if (selectedValue === "option2") {
-      imageElement.src = "./imge/IMG-20231214-WA0003.jpg";
-    } else if (selectedValue === "option3") {
-      imageElement.src = "./imge/Untitled-1.png";
-    }
-
-    imageContainer.style.display = "block";
+  if (selectedItem === "item1") {
+    displayDiv.style.display = "block";
+    myFrame.src = "./table.html"; // لینک مورد نظر برای آیتم 1 رو قرار بدید
+  } else if (selectedItem === "item2") {
+    displayDiv.style.display = "block";
+    myFrame.src = "./Betters.html"; // لینک مورد نظر برای آیتم 2 رو قرار بدید
+  } else if (selectedItem === "item3") {
+    displayDiv.style.display = "block";
+    myFrame.src = "./players record.html"; // لینک مورد نظر برای آیتم 3 رو قرار بدید
+  } else {
+    displayDiv.style.display = "none";
+    myFrame.src = "";
   }
+}
+
+var dropdown = document.getElementById("dropdown");
+dropdown.addEventListener("change", showSelectedIframe);
