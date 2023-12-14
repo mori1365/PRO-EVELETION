@@ -156,6 +156,11 @@ header.sticky{
   .image1 img{
     width: 100%;
     height: 600px;
+    transition: all 0.5s ease;
+  }
+  .image1 img:hover{
+    scale: 0.9;
+    border: 3px solid purple;
   }
   .image1 a{
     position: absolute;
@@ -240,7 +245,7 @@ header.sticky{
     color: white;
   }
   #dropdown{
-    width: 500px;
+    width: 50%;
     color: #8C23E3;
     font-size: 2rem;
     text-align: center;
